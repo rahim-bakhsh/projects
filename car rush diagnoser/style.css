@@ -1,0 +1,20 @@
+body {
+    background-image: url(road2.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+#pre-saved {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+@media only screen and (max-width: 560px) {
+    .flex-sm-column {
+        flex-direction: column;
+    }
+
+    .flex-sm-column .btn {
+        margin-bottom: .6em;
+    }
+}

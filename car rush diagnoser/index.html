@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../bootstrap-5.2.3-dist/css/bootstrap.min.css">
+        <link rel="shortcut icon" href="roadc.jfif" type="image/x-icon">
+        <link rel="stylesheet" href="style.css">
+        <title>car rush diagnoser per hour</title>
+
+    </head>
+
+    <body class="container">
+        <main>
+            <section class="d-flex  flex-column align-items-center gap-3 mt-5 fst-italic">
+                <h1 class="display-2 fw-semibold text-center">Amount of Car that Crossed</h1>
+                <h3 class="display-3 fw-bold" id="num-displayer">0</h3>
+                <div class="d-flex flex-lg-row flex-sm-column justify-content-center align-items-center w-100 pt-4 ">
+                    <button type="button" class="btn btn-danger btn-lg col-5 col-lg-2 me-lg-3" id="incrementer-btn"
+                        onclick="incremnt()">increment</button>
+                    <button type="button" class="btn btn-success btn-lg col-5 col-lg-2 mt-lg-0 mt-sm-3" id="saver-btn"
+                        onclick="save()">save</button>
+                </div>
+                <p id="pre-saved" class=" col-12 col-lg-8 fs-1 text-center text-light mt-5 rounded-top">previous
+                    entries : </p>
+            </section>
+        </main>
+        <script src="index.js"></script>
+    </body>
+
+</html>
