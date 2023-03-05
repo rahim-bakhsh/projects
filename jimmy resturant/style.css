@@ -1,0 +1,395 @@
+/* general */
+body,
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Smythe;
+}
+
+.pos-absolute {
+    position: absolute;
+}
+
+.pos-relative {
+    position: relative;
+}
+
+.pos-fixed {
+    position: fixed !important;
+}
+
+.d-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: .2em;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+
+.l-hight {
+    line-height: 1.5em;
+}
+
+.ps-1 {
+    padding-left: .4em;
+}
+
+.pb {
+    padding: .5em 0;
+}
+
+.c-pointer {
+    cursor: pointer;
+}
+
+
+.border-none {
+    border: none;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.btn-success {
+    background: #16DB99;
+    color: white;
+    padding: .7em 0;
+    margin-top: 1.5em;
+    border-radius: 3px;
+    font-size: 1em;
+}
+
+.hidden {
+    display: none;
+}
+
+.time-out {
+    transition: all 900ms;
+}
+
+
+/* service name style */
+.service-name {
+    background: url(images/burger-sm.jpg) no-repeat;
+    background-size: cover;
+    height: 180px;
+    background-color: rgba(0, 0, 0, 0.3);
+    background-blend-mode: darken;
+}
+
+.jimmy,
+.mission {
+    left: 40.07px;
+    font-style: normal;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.jimmy {
+    top: 46px;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 24px;
+}
+
+.mission {
+    top: 5.3em;
+    padding-left: .5em;
+}
+
+
+
+/* menu list */
+.menu {
+    padding: 1em 1em 3em;
+}
+
+.list {
+    padding: 1em 0;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    align-items: center;
+    border-bottom: .1em solid silver;
+}
+
+.emoji {
+    grid-column: 1 / span 2;
+    text-align: center;
+    font-size: 3em;
+}
+
+.properties {
+    grid-column: 3 /span 6;
+    color: rgba(0, 0, 0, 0.79);
+}
+
+.ingredients {
+    font-size: .65em;
+    color: gray;
+}
+
+.price {
+    font-weight: bold;
+}
+
+.add {
+    grid-column: 12/span 1;
+    border-radius: 50%;
+}
+
+
+/* your order part */
+
+#ordering-food-modal {
+    height: 0;
+    bottom: 0;
+    background-color: whitesmoke;
+    padding: 0 2em;
+    overflow: hidden;
+    box-shadow: .1em 0 1em .9em rgba(0, 0, 0, 0.5);
+}
+
+#ordering-food-modal.active {
+    height: 100%;
+}
+
+#order-rep {
+    bottom: 0;
+    right: 0;
+    color: black;
+    background-color: #16DB99;
+    font-size: 1em;
+    font-weight: bolder;
+    border-radius: .4em;
+    z-index: 5;
+    padding: 1em 1.2em;
+}
+
+#order-rep.clicked {
+    color: #16DB99;
+    background-color: black;
+}
+
+#order-rep .rotate {
+    transform: rotate(180deg);
+}
+
+
+#ordering-food-modal>h3 {
+    padding: 2em 0 1em;
+    font-size: 1.8em;
+    border-bottom: 3px dashed #16DB99;
+}
+
+
+#ordering-food-modal-inner {
+    border-bottom: 2px solid gray;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+    padding: 2em 0;
+}
+
+#ordering-food-modal-inner>div {
+    padding-bottom: .2em;
+}
+
+
+.remove-btn {
+    color: gray;
+    font-size: .8em;
+}
+
+/* payment modal */
+#payment-modal {
+    width: 95%;
+    height: fit-content;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 5;
+    margin: auto;
+    border-radius: 3.8x;
+    padding: 3em 1em .9em;
+    background-color: white;
+}
+
+
+.card-detals-h1 {
+    padding-bottom: .8em;
+    font-weight: 500;
+}
+
+
+input {
+    padding: 1em .8em;
+    margin: .7em auto;
+    font-size: 1.1em;
+    outline: 0;
+    border: 1px solid silver;
+    transition: border 1s;
+}
+
+input:focus {
+    border: 1px solid #16DB99;
+}
+
+/* hide the arrows of input */
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    display: none;
+    /* -webkit-appearance: none; */
+    /* margin: 0; */
+}
+
+.error {
+    font-size: .9em;
+    color: orangered;
+    top: 5.1em;
+    padding-left: .5em;
+}
+
+
+#pay-btn {
+    margin-top: 1.3em;
+    font-size: 1.5em;
+    padding: .8em;
+    text-transform: capitalize;
+}
+
+.scape {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 140vh;
+    top: 0;
+    right: 0;
+    margin: auto;
+}
+
+
+.alert {
+    top: 2em;
+    margin: 1em;
+    padding: 1.5em;
+    color: #065F46;
+    background: #ECFDF5;
+    border-radius: 3px;
+}
+
+@media only screen and (max-width:768px) {
+    .jimmy,
+    .mission {
+        left: .6em;
+    }
+}
+
+/* (min-width:768px) and */
+@media (min-width:768px) {
+
+    .service-name {
+        height: 15em;
+        background: url(images/burger.jpg) no-repeat;
+        background-color: rgba(0, 0, 0, 0.3);
+        background-blend-mode: darken;
+        background-size: cover;
+    }
+
+    .jimmy {
+        font-size: 3em;
+    }
+
+    .mission {
+        font-size: 1.8em;
+        top: 3.1em;
+    }
+
+    .properties {
+        font-size: 1.6em;
+    }
+
+    .emoji {
+        font-size: 6em;
+    }
+
+    .add {
+        font-size: 1em;
+    }
+
+    #ordering-food-modal {
+        width: 20%;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        border-radius: .5em;
+        padding: 0 1em;
+        box-shadow: -.2em 3em 3em .1em rgba(0, 0, 0, 0.5);
+    }
+
+    #ordering-food-modal.active {
+        height: 75%;
+        overflow-y: scroll;
+    }
+
+    #ordering-food-modal>h3 {
+        padding: 1em 0 .5em;
+        border: none;
+        text-decoration: underline;
+        text-decoration-style: dashed;
+        text-underline-offset: .4em;
+        text-decoration-color: #16DB99;
+    }
+
+    #ordering-food-modal-inner {
+        padding: .5em 0;
+    }
+
+    #ordering-food-modal-footer {
+        padding-bottom: 2em;
+    }
+
+    /* payment modal */
+    #payment-modal {
+        width: 35%;
+        border-radius: .5em;
+        padding-bottom: 1.2em;
+    }
+
+    .scape {
+        height: 290vh;
+    }
+
+    .menu {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .list {
+        width: 45%;
+    }
+
+    .emoji {
+        text-align: center;
+        font-size: 5em;
+    }
+
+    .properties {
+        grid-column: 3 /span 6;
+        padding-left: 1em;
+    }
+
+    .add {
+        grid-column: 12/span 1;
+    }
+
+    #order-rep {
+        width: 20%;
+        font-size: 1.3em;
+    }
+}

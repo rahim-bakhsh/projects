@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="images/burger.jpg" type="image/x-icon">
+        <link rel="stylesheet" href="style.css">
+        <title>jimmy resturant</title>
+    </head>
+
+    <body>
+        <section>
+            <div class="service-name w-100 pos-relative">
+                <h2 class="jimmy pos-absolute">jimmy`s Dinner</h2>
+                <p class="mission pos-absolute">The best burger and pizza in the town. </p>    
+            </div>
+            <button type="button" class="pos-fixed d-flex w-100 border-none c-pointer time-out" id="order-rep">Your Orders
+                <p id="angle" class="time-out" data-id="order-rep">&bigtriangleup;</p>
+            </button>
+            <div class="menu w-100" id="menu"></div>
+            <div class="text-center" id="alert"></div>
+
+            <div id="ordering-food-modal" class="pos-fixed w-100 time-out ">
+                <h3 class="text-center pos-relative p-1">Your Order
+                </h3>
+                
+                <div id="ordering-food-modal-inner" class="time-out">
+
+                    
+                </div>
+                <div id="ordering-food-modal-footer" style="bottom: 0;">
+                    <div class="d-flex">
+                        <h4>Total Price:</h4>
+                        <h3><span id="total-price">0</span>$</h3>
+                    </div>
+                    <button type="button" id="order-btn" class="btn-success w-100 border-none c-pointer">Complete Order</button>
+                </div>
+            </div>
+
+            <div id="payment-modal" class="pos-fixed hidden">
+                <h1 class="text-center card-detals-h1">Enter card details</h1>
+                <div class="payment-modal-inner">
+                    <form name="payment-form" action="" method="POST" id="payment-form">
+                        <div class="pos-relative">
+                            <input type="text" name="name" class="w-100" id="name" placeholder="Enter Your Name" minlength="5"
+                                maxlength="31">
+                            <p class="name-error error pos-absolute hidden">Write Your name dear!</p>
+                        </div>
+                        <div class="pos-relative">
+                            <input type="number" name="card-number" class="w-100" id="card-number"
+                                placeholder="Enter Your Card Number">
+                            <p class="card-number-error error pos-absolute hidden">The card number is between
+                                15 up to 19.</p>
+                        </div>
+                        <div class="pos-relative">
+                            <input type="number" name="cvv" class="w-100" id="cvv" placeholder="Enter CVV">
+                            <p class="cvv-error error pos-absolute hidden">The CVV must be 3 number.</p>
+                        </div>
+                        <button type="submit" class="btn-success w-100 border-none" id="pay-btn">Pay</button>
+                    </form>
+                </div>
+            </div>
+            <div class="scape pos-absolute w-100 hidden"></div>
+        </section>
+
+        <script src="index.js" type="module"></script>
+        <script src="payment-modal-state.js" type="module"></script>
+    </body>
+
+</html>
