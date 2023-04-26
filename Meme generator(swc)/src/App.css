@@ -1,7 +1,10 @@
-/* :root {
-  --background-color: "white";
-  --text-color: "black";
-} */
+:root {
+  --background-color: whitesmoke;
+  --background-input: whitesmoke;
+  --text-color: black;
+  ---border-color: rgba(0, 0, 0, 0.2) !important;
+  --meme-text: white;
+}
 
 * {
   box-sizing: border-box;
@@ -18,6 +21,7 @@ body {
 
 .App {
   height: 100vh;
+  background-color: var(--background-color);
 }
 
 .header {
@@ -45,12 +49,10 @@ body {
 }
 
 .svg--parent {
-  position: absolute;
-  top: .8em;
-  right: 1.1em;
   display: flex;
   flex-direction: row-reverse;
-  gap: 1em;
+  align-items: center;
+  gap: .5em;
 }
 
 svg {
@@ -66,6 +68,7 @@ svg {
 
 .icon--moon:hover {
   color: whitesmoke;
+  fill: whitesmoke;
 }
 
 .them--info {
@@ -87,7 +90,9 @@ svg {
   border-radius: 0.4em;
   text-indent: 0.8em;
   transition: all 200ms;
-  border: 0.2em solid rgba(0, 0, 0, 0.2);
+  border: 0.2em solid var(---border-color);
+  background-color: var(--background-input);
+  color: var(--text-color);
 }
 
 .form--input:focus {
@@ -141,7 +146,7 @@ svg {
   font-family: impact, sans-serif;
   font-size: 2em;
   text-transform: uppercase;
-  color: white;
+  color: var(--meme-text);
   letter-spacing: 1px;
   word-wrap: break-word;
   text-shadow:
@@ -215,9 +220,11 @@ svg {
   }
 }
 
-
-[data-them='dark'] {
-  background-color: black;
-  color: white;
+#dark---tneme {
+  --background-color: black;
+  --background-input: rgba(255, 255, 255, .09);
+  --text-color: white;
+  ---border-color: rgba(255, 255, 255, .4) !important;
+  --meme-text: white;
   color-scheme: light dark;
 }
