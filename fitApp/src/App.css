@@ -24,9 +24,9 @@
   margin-bottom: 6rem;
   /* padding: 16rem 0 0 0; */
   background:
-    url(src/assets/img/bg-circle.png),
-    url(src/assets/img/bg-triangle.png),
-    url(src/assets/img/bg-bottom.png),
+    url(../img/bg-circle.png),
+    url(../img/bg-triangle.png),
+    url(../img/bg-bottom.png),
     linear-gradient(to bottom right, var(--primary), var(--secondary)) !important;
   background-position:
     left 0px top 0px,
@@ -42,7 +42,7 @@
   height: 100% !important;
   top: 0;
   left: 0;
-  background: url(src/assets/img/screenshot-frame.png) center center no-repeat;
+  background: url(../img/screenshot-frame.png) center center no-repeat;
   background-size: 253px 500px;
   /* background-size: 100% !important; */
   overflow: hidden !important;
@@ -137,9 +137,9 @@
   margin-top: 6rem;
   padding-top: 9rem;
   background:
-    url(src/assets/img/bg-circle.png),
-    url(src/assets/img/bg-triangle.png),
-    url(src/assets/img/bg-top.png),
+    url(../img/bg-circle.png),
+    url(../img/bg-triangle.png),
+    url(../img/bg-top.png),
     linear-gradient(to bottom right, var(--primary), var(--secondary));
   background-position:
     left 0px bottom 0px,
@@ -152,10 +152,8 @@
   font-family: "Font Awesome 5 Free";
 }
 
-@media (max-width:1023px) {
-  .company-logo {
-    background: linear-gradient(to bottom right, var(--secondary), var(--primary));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
+.company-logo {
+  background: linear-gradient(to bottom right, var(--secondary), var(--primary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

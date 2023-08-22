@@ -28,23 +28,23 @@ export const linksOfNav = [
 export const carouselData = [
   {
     title: "app screen shoots",
-    img: "src/assets/img/screenshot-1.png",
+    img: "./img/screenshot-1.png",
   },
   {
     title: "app screen shoots",
-    img: "src/assets/img/screenshot-2.png",
+    img: "./img/screenshot-2.png",
   },
   {
     title: "app screen shoots",
-    img: "src/assets/img/screenshot-3.png",
+    img: "./img/screenshot-3.png",
   },
   {
     title: "app screen shoots",
-    img: "src/assets/img/screenshot-4.png",
+    img: "./img/screenshot-4.png",
   },
   {
     title: "app screen shoots",
-    img: "src/assets/img/screenshot-5.png",
+    img: "./img/screenshot-5.png",
   },
 ];
 
@@ -230,7 +230,7 @@ export const reviewData = [
   {
     id: 10010,
     name: "Sarah",
-    img: "src/assets/img/testimonial-1.jpg",
+    img: "./img/testimonial-1.jpg",
     profession: "Artist",
     rate: 5,
     openion: ` Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam
@@ -239,7 +239,7 @@ export const reviewData = [
   {
     id: 10015,
     name: "John",
-    img: "src/assets/img/testimonial-2.jpg",
+    img: "./img/testimonial-2.jpg",
     profession: "Polices Officer",
     rate: 5,
     openion: ` Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam
@@ -248,7 +248,7 @@ export const reviewData = [
   {
     id: 10020,
     name: "Alice",
-    img: "src/assets/img/testimonial-3.jpg",
+    img: "./img/testimonial-3.jpg",
     profession: "Driver",
     rate: 5,
     openion: ` Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam
@@ -257,7 +257,7 @@ export const reviewData = [
   {
     id: 10030,
     name: "Jenny",
-    img: "src/assets/img/testimonial-4.jpg",
+    img: "./img/testimonial-4.jpg",
     profession: "Teacher",
     rate: 5,
     openion: ` Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam
@@ -266,7 +266,7 @@ export const reviewData = [
   {
     id: 10031,
     name: "Jenny",
-    img: "src/assets/img/testimonial-4.jpg",
+    img: "./img/testimonial-4.jpg",
     profession: "Teacher",
     rate: 5,
     openion: ` Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam
@@ -275,7 +275,7 @@ export const reviewData = [
   {
     id: 10032,
     name: "Jenny",
-    img: "src/assets/img/testimonial-4.jpg",
+    img: "./img/testimonial-4.jpg",
     profession: "Teacher",
     rate: 5,
     openion: ` Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam

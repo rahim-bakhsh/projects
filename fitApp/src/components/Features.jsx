@@ -3,9 +3,9 @@ import { featuresData, processData } from "../assets/data";
 import Card from "./Card";
 import Carousel from "./Carousel";
 import Button from "./ButtonGradient";
+
 function Features() {
   const [features, setFeatures] = useState(featuresData);
-
   const appFeatures = features.map((feature, index) => {
     return (
       <Card
@@ -141,7 +141,7 @@ function Features() {
                 className="w-full"
                 data-aos="slide-up"
                 data-aos-delay="50"
-                src="src/assets/img/about.png"
+                src="./img/about.png"
               />
             </div>
             <div className="lg:w-6/12" data-aos="slide-up" data-aos-delay="250">

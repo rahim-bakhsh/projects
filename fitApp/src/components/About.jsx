@@ -67,7 +67,7 @@ function About() {
         data-aos="fade-up"
         data-aos-delay="600"
       >
-        <img className="w-full h-full" src="src/assets/img/about.png" />
+        <img className="w-full h-full" src="./img/about.png" />
       </div>
     </div>
   );

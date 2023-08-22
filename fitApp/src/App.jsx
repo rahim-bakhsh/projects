@@ -1,4 +1,4 @@
-import { useEffect} from "react";
+import { useEffect, useRef, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 // styles
@@ -30,50 +30,41 @@ function App() {
     window.addEventListener("load", aosInit);
     AOS.refresh();
   }, []);
+
   // intersection
-  // const [isIntersecting, setIsIntersecting] = useState(false);
-  // const ref = useRef(null);
-  // const headerRef = useRef(null);
+  const myRef = useRef();
+  const [isNavVisible, setIsNavVisible] = useState();
 
-  // useEffect(() => {
-  //   const observer = new IntersectionObserver(
-  //     ([entry]) => {
-  //       setIsIntersecting(entry.isIntersecting);
-  //     },
-  //     { rootMargin: "-10px" }
-  //   );
-  //   console.log(isIntersecting);
-  //   observer.observe(ref.current);
-
-  //   return () => observer.disconnect();
-  // }, [isIntersecting]);
-
-  // useEffect(() => {
-  //   if (isIntersecting) {
-  //     headerRef.current.style = {
-  //       backgroundColor:'white',
-  //       position:'fixed'
-  //     }
-  //   } else {
-  //     ref.current.querySelectorAll("div").forEach((el) => {
-  //       el.classList.remove("slide-in");
-  //     });
-  //   }
-  // }, [isIntersecting]);
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      const entry = entries[0];
+      setIsNavVisible(entry.isIntersecting);
+    });
+    observer.observe(myRef.current);
+  }, []);
 
   return (
     <>
-      <header id="head">
-        <Nav />
+      <header
+        id="head"
+        className={
+          isNavVisible
+            ? `sticky top-0 z-20 w-full ease-in-out duration-500 bg-[whitesmoke] drop-shadow-xl`
+            : "text-white "
+        }
+      >
+        <Nav refernce={isNavVisible} />
       </header>
       <main className="">
         <Home />
         <Layout>
-          <About />
-          <Features />
-          <Pricing />
-          <Testimonial />
-          <Contact />
+          <section ref={myRef}>
+            <About />
+            <Features />
+            <Pricing />
+            <Testimonial />
+            <Contact />
+          </section>
         </Layout>
       </main>
       <Footer />

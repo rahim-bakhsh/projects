@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { footerLinks } from "../assets/data";
-function Footer() {
+function Footer(props) {
   const [links, setLinks] = useState(footerLinks);
   useEffect(() => setLinks(footerLinks), [footerLinks]);
 
@@ -20,8 +20,8 @@ function Footer() {
 
   return (
     <footer
-      className="footer w-full h-full bg-no-repeat bg-primary text-white wow fadeIn"
-      data-wow-delay="0.1s"
+      className="footer w-full h-full bg-no-repeat bg-primary text-white wow slide-up"
+      data-aos-delay="150"
     >
       <div className="container mx-auto py-12 px-10 lg:px-[6rem] sm:px-17 md:px-10">
         <div className="py-5">

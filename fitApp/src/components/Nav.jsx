@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { linksOfNav } from "../assets/data";
 import Button from "./ButtonGradient";
-function Nav() {
+function Nav(prop) {
   const [navLinks, setNavLinks] = useState(linksOfNav);
   const [isShow, setShow] = useState(false);
 
@@ -30,10 +30,10 @@ function Nav() {
   useEffect(() => setNavLinks(linksOfNav), [linksOfNav]);
   return (
     <nav
-      className={`absolute top-0 w-full z-10 lg:bg-transparent lg:text-white bg-white text-black`}
+      className={`absolute top-0 w-full z-10 bg-inherit text-inherit`}
       id="header"
     >
-      <div className={`mx-auto px-2 sm:px-6 lg:px-12 py-6`}>
+      <div className={`mx-auto px-2 sm:px-6 lg:px-12 py-3`}>
         <div className="flex h-16 items-center justify-between flex-grow">
           {/* computer navbar */}
           <div
@@ -42,7 +42,11 @@ function Nav() {
           >
             <div className="flex flex-shrink-0 items-center">
               <a href="#" className="text-4xl font-bold">
-                <h1 className="company-logo text-white">FitApp</h1>
+                <h1
+                  className={`${prop.refernce ? "company-logo" : "text-white"}`}
+                >
+                  FitApp
+                </h1>
               </a>
             </div>
             <div className="hidden md:block flex-grow">
