@@ -23,11 +23,11 @@ function App() {
       once: true,
       mirror: false,
     });
-    return new AOS.refresh();
+    // return new AOS.refresh();
   };
 
   useEffect(() => {
-    window.addEventListener("load", aosInit);
+    window.addEventListener("scroll", aosInit);
     AOS.refresh();
   }, []);
 
