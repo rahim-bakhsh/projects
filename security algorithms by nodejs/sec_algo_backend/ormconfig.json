@@ -1,0 +1,18 @@
+{
+  "type": "postgres",
+  "host": "localhost",
+  "port": 5432,
+  "username": "rahim",
+  "password": "rahim",
+  "database": "new_algo",
+  "synchronize": true,
+  "logging": false,
+  "entities": ["./src/entities/*.js"],
+  "migrations": ["./src/migrations/*.ts"],
+  "subscribers": ["./src/subscriber/*.js"],
+  "cli": {
+    "entitiesDir": "./src/entities",
+    "migrationsDir": "./src/migrations",
+    "subscribersDir": "./src/subscriber"
+  }
+}
