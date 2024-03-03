@@ -1,0 +1,44 @@
+.img-prod{
+    width: 8em !important;
+    height: 9em !important;
+    margin: auto;
+}
+.quality{
+    margin: 8em 0 !important;
+}
+.bg{
+    color: white !important;
+}
+.card-group > .card {
+    /* border-left: 1px solid rgba(128, 128, 128,.4) !important; */
+}
+.card-group{
+    border: none !important ;
+}
+.position-relative{
+    top: -20px;
+}
+.logo{
+    width: 5em;
+}
+.w-img{
+    height: 20em;
+    width: 50%;
+}
+.bg-darker{
+    background-color: #1C2B33;
+    font-size: .9em;
+}
+.logo_IF{
+    width: 7em;
+}
+.media{
+    width: 2.5em;
+    
+}
+
+@media (min-width:100px) and (max-width:720px) {
+    .INMSU{
+        display: none;
+    }
+}
