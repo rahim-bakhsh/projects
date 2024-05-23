@@ -51,13 +51,13 @@ body {
 
 @font-face {
   font-family: "SnellBT Regular";
-  src: url(src/assets/fonts/SnellBT-Regular.otf);
+  src: url(/fonts/SnellBT-Regular.otf);
   font-weight: 500;
 }
 
 @font-face {
   font-family: "SnellBT Bold";
-  src: url(src/assets/fonts/SnellBT-Bold.otf);
+  src: url(/fonts/SnellBT-Bold.otf);
   font-weight: 700;
 }
 
@@ -241,7 +241,7 @@ a:focus {
   left: 0;
   width: 75%;
   height: 100%;
-  background: url(src/assets/images/slider-bg1.png) bottom no-repeat;
+  background: url(/images/slider-bg1.png) bottom no-repeat;
   background-size: 100% 100%;
   background-size: cover;
   z-index: 2;
@@ -254,7 +254,7 @@ a:focus {
   right: 45px;
   width: 550px;
   height: 90%;
-  background-image: url(src/assets/images/slider-bg2.png);
+  background-image: url(/images/slider-bg2.png);
   background-size: cover;
   background-position: bottom right;
   z-index: 1;
@@ -584,7 +584,7 @@ a:focus {
 }
 
 .client_section .client-container {
-  background-image: url(src/assets/images/client-bg.png);
+  background-image: url(/images/client-bg.png);
   background-size: 90% 100%;
   background-position: bottom right;
   background-repeat: no-repeat;
@@ -908,9 +908,9 @@ a:focus {
   bottom: 1em;
   z-index: 5;
   right: 1em;
-  height:fit-content;
+  height: fit-content;
   background-color: #5A2918;
-transition: all 400ms ease-in-out;
+  transition: all 400ms ease-in-out;
 }
 
 .back-to-top:hover {

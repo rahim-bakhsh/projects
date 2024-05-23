@@ -21,7 +21,7 @@ function NavBar() {
   }, [pagelinks]);
 
   return (
-    <header id="top" className="px-3 shadow">
+    <header id="top" className="p-3 shadow">
       <div className="container-fluid">
         <nav className="navbar navbar-expand-lg custom_nav-container justify-content-between">
           <a className="navbar-brand">ChocoLux</a>
@@ -29,12 +29,10 @@ function NavBar() {
             className="btn d-none fa fa-bars text-dark"
             type="button"
             id="bars"
-            onClick={() => setIsNavAppear(!isNavAppear)}
-          ></button>
+            onClick={() => setIsNavAppear(!isNavAppear)}></button>
 
           <div
-            className={`navbar-items d-flex ${isNavAppear && "show bg-dark"}`}
-          >
+            className={`navbar-items d-flex ${isNavAppear && "show bg-dark"}`}>
             <ul className="navbar-nav m-auto">{navLinks}</ul>
             <div className="quote_btn-container">
               <form className="form-inline">

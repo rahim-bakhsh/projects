@@ -17,13 +17,13 @@ function About(props) {
               </p>
               <a href="#">
                 <span>Read More</span>
-                <img src="src/assets/images/color-arrow.png" alt="" />
+                <img src="/images/color-arrow.png" alt="" />
               </a>
             </div>
           </div>
           <div className="col-md-6">
             <div className="img-box">
-              <img src="src/assets/images/about-img.png" alt="" />
+              <img src="/images/about-img.png" alt="" />
             </div>
           </div>
         </div>

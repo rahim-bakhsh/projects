@@ -59,7 +59,11 @@ function Testimonial(props) {
         <div className="row justify-content-between align-items-center">
           <div className="col-lg-4 ms-auto">
             <div className="img-box sub_img-box">
-              <img src="src/assets/images/client-chocolate.png" alt="" className="w-100" />
+              <img
+                src="/images/client-chocolate.png"
+                alt=""
+                className="w-100"
+              />
             </div>
           </div>
           <div className="col-lg-6 px-0">
@@ -74,15 +78,13 @@ function Testimonial(props) {
                 <div className="carousel-btn-box">
                   <button
                     className="carousel-control-prev"
-                    onClick={() => setIndex(index - 1)}
-                  >
+                    onClick={() => setIndex(index - 1)}>
                     <i className="fa fa-arrow-left" aria-hidden="true"></i>
                     <span className="sr-only">Previous</span>
                   </button>
                   <button
                     className="carousel-control-next"
-                    onClick={() => setIndex(index + 1)}
-                  >
+                    onClick={() => setIndex(index + 1)}>
                     <i className="fa fa-arrow-right" aria-hidden="true"></i>
                     <span className="sr-only">Next</span>
                   </button>

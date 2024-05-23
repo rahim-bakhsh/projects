@@ -49,7 +49,7 @@ function Slider(props) {
                 </h1>
                 <a href="#">
                   <span>Read More</span>
-                  <img src="src/assets/images/white-arrow.png" alt="" />
+                  <img src="/images/white-arrow.png" alt="" />
                 </a>
               </div>
             </div>
@@ -66,27 +66,25 @@ function Slider(props) {
 
   return (
     <section id={props.id} className="slider_section text-light pt-3">
-        <div className="row align-items-center">
-          {carousel}
-          <div className="carousel-btn-box position-absolute d-flex">
-            <button
-              className="carousel-control-prev"
-              type="button"
-              onClick={() => setIndex(index - 1)}
-            >
-              <i className="fa fa-arrow-left" aria-hidden="true"></i>
-              <span className="sr-only">Previous</span>
-            </button>
-            <button
-              className="carousel-control-next"
-              type="button"
-              onClick={() => setIndex(index + 1)}
-            >
-              <i className="fa fa-arrow-right" aria-hidden="true"></i>
-              <span className="sr-only">Next</span>
-            </button>
-          </div>
+      <div className="row align-items-center">
+        {carousel}
+        <div className="carousel-btn-box position-absolute d-flex">
+          <button
+            className="carousel-control-prev"
+            type="button"
+            onClick={() => setIndex(index - 1)}>
+            <i className="fa fa-arrow-left" aria-hidden="true"></i>
+            <span className="sr-only">Previous</span>
+          </button>
+          <button
+            className="carousel-control-next"
+            type="button"
+            onClick={() => setIndex(index + 1)}>
+            <i className="fa fa-arrow-right" aria-hidden="true"></i>
+            <span className="sr-only">Next</span>
+          </button>
         </div>
+      </div>
     </section>
   );
 }

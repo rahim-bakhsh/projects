@@ -10,17 +10,17 @@ export const carouselData = [
   {
     title: "Chocolate",
     name: "Yummy",
-    img: "src/assets/images/slider-img.png",
+    img: "/images/slider-img.png",
   },
   {
     title: "Chocolate",
     name: "Yummy",
-    img: "src/assets/images/slider-img.png",
+    img: "/images/slider-img.png",
   },
   {
     title: "Chocolate",
     name: "Yummy",
-    img: "src/assets/images/slider-img.png",
+    img: "/images/slider-img.png",
   },
 ];
 
@@ -31,7 +31,7 @@ export const productsData = [
     name: "Yummy",
     price: 5.0,
     url: "#",
-    img: "src/assets/images/chocolate1.png",
+    img: "/images/chocolate1.png",
   },
 
   {
@@ -40,7 +40,7 @@ export const productsData = [
     name: "Yummy",
     price: 5.0,
     url: "#",
-    img: "src/assets/images/chocolate2.png",
+    img: "/images/chocolate2.png",
   },
   {
     id: 590,
@@ -48,7 +48,7 @@ export const productsData = [
     name: "Yummy",
     price: 5.0,
     url: "#",
-    img: "src/assets/images/chocolate3.png",
+    img: "/images/chocolate3.png",
   },
   {
     id: 700,
@@ -56,7 +56,7 @@ export const productsData = [
     name: "Yummy",
     price: 5.0,
     url: "#",
-    img: "src/assets/images/chocolate1.png",
+    img: "/images/chocolate1.png",
   },
   {
     id: 11,
@@ -64,7 +64,7 @@ export const productsData = [
     name: "Yummy",
     price: 5.0,
     url: "#",
-    img: "src/assets/images/chocolate2.png",
+    img: "/images/chocolate2.png",
   },
   {
     id: 409,
@@ -72,7 +72,7 @@ export const productsData = [
     name: "Yummy",
     price: 5.0,
     url: "#",
-    img: "src/assets/images/chocolate3.png",
+    img: "/images/chocolate3.png",
   },
   {
     id: 5050,
@@ -80,7 +80,7 @@ export const productsData = [
     name: "Yummy",
     price: 5.0,
     url: "#",
-    img: "src/assets/images/chocolate1.png",
+    img: "/images/chocolate1.png",
   },
   {
     id: 1000,
@@ -88,7 +88,7 @@ export const productsData = [
     name: "Yummy",
     price: 5.0,
     url: "#",
-    img: "src/assets/images/chocolate1.png",
+    img: "/images/chocolate1.png",
   },
 ];
 
@@ -96,7 +96,7 @@ export const clientOpenion = [
   {
     id: 100001,
     clientName: "Gero Miliya",
-    img: "src/assets/images/client-img.jpg",
+    img: "/images/client-img.jpg",
     text: ` long established fact that a reader will be distracted
             by the readable content of a page when looking at its
             layout. The point of using Lorem Ipsum is that it
@@ -111,7 +111,7 @@ export const clientOpenion = [
   {
     id: 120001,
     clientName: "Gero Miliya",
-    img: "src/assets/images/client-img.jpg",
+    img: "/images/client-img.jpg",
     text: ` long established fact that a reader will be distracted
             by the readable content of a page when looking at its
             layout. The point of using Lorem Ipsum is that it
@@ -126,7 +126,7 @@ export const clientOpenion = [
   {
     id: 102001,
     clientName: "Gero Miliya",
-    img: "src/assets/images/client-img.jpg",
+    img: "/images/client-img.jpg",
     text: ` long established fact that a reader will be distracted
             by the readable content of a page when looking at its
             layout. The point of using Lorem Ipsum is that it
@@ -141,7 +141,7 @@ export const clientOpenion = [
   {
     id: 100901,
     clientName: "Gero Miliya",
-    img: "src/assets/images/client-img.jpg",
+    img: "/images/client-img.jpg",
     text: ` long established fact that a reader will be distracted
             by the readable content of a page when looking at its
             layout. The point of using Lorem Ipsum is that it
